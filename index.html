@@ -75,7 +75,56 @@
     <textarea name="Requests?" id="requests" cols="30" rows="10" placeholder="Type something here"></textarea>
 </p>
 <button>Submit</button>
+<h2>Validations</h2>
+<form action="">
+    <label for="first">Enter First Name</label>
+    <input type="text" name="first" id="first" required>
+    <p>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="10">
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="email" required>
+    </p>
+</form>
+<form action="">
+<h2>Race Registration</h2>
+<div>
+    <label for="first">First Name</label>
+<input type="text" name="firstname" id="first" placeholder="First Name" required>
+<label for="Last">Last Name</label>
+<input type="text" name="lastname" id="last" placeholder="Last Name" required>
+</div>
 
-
+<p>Select a Race: </p>
+<div>
+<input type="radio" name="race" id="funrun" value="5k">
+<label for="funrun">Fun Run 5k</label>
+</div>
+<div>
+<input type="radio" name="race" id="half" value="half">
+<label for="half">Half Marathon</label>
+</div>
+<div>
+<input type="radio" name="race" id="full" value="full">
+<label for="full">Full Marathon</label>
+</div>
+<div>
+<label for="email">Email</label>
+<input type="email" required>
+<label for="password">Password</label>
+<input type="password">
+</div>
+<div>
+    <label for="age">Select an age group</label>
+    <select name="age" id="">
+        <option value="under 18">under 18</option>
+        <option value="50 and under">50 and under</option>
+        <option value="65+">65+</option>
+    </select>
+</div>
+<button>Register</button>
+</form>
 </body>
 </html>
